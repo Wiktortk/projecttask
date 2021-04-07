@@ -1,3 +1,39 @@
+/* Splash */
+
+.splash {
+  text-align: center;
+  background-color: rgb(10, 9, 9);
+}
+
+.splash-inner {
+  padding: 5px 2px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
+
+.horizontal li {
+  display: inline-block;
+}
+
+.icon {
+  color: gold;
+  margin: 0 10%;
+}
+
+.item-link {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+}
+
 .container, .row {
   height: 100vh;
 }
