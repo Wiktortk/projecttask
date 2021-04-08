@@ -1,3 +1,36 @@
+/* Article */
+
+.text-first, .text-second {
+  color: white;
+  text-align: center;
+  margin: 15px 10px; 
+}
+
+.text-first {
+  font-size: 60px;
+  margin-top: 90px; 
+}
+
+.text-second {
+  font-size: 30px;
+}
+
+#photo {
+  background-image: url(https://images.pexels.com/photos/4904345/pexels-photo-4904345.jpeg);
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#photo p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Splash */
 
 .splash {
@@ -25,7 +58,11 @@ li {
 
 .icon {
   color: gold;
-  margin: 0 10%;
+  margin: 0 55px;
+}
+
+.item {
+  margin: 0 15px;
 }
 
 .item-link {
@@ -34,14 +71,78 @@ li {
   margin: 0 5px;
 }
 
-.container, .row {
-  height: 100vh;
+/* Cointainer */
+
+.container {
+  /*height: 100vh;*/
+  width: 100%;
+  max-width: 100%;
+  margin: 50px 0;
+  padding: 0;
 }
 
-.row, .img-fluid {
-  height: 100%;
+.row {
+  margin: 2px;
 }
 
-.carousel-caption  {
-  margin-bottom: 100px;
+/* Services */
+
+.gray {
+  background-color: gainsboro;
+}
+
+.fas {
+  align-items: center;
+}
+
+.text1, .text2, .text3, .text4 {
+  text-align: center;
+  margin: 15px 10px;
+  color: black;
+}
+
+.text1 {
+  font-size: 50px;
+  margin-top: 90px;
+} 
+
+.text2 {
+  font-size: 21px; 
+  margin-bottom: 80px;
+} 
+
+.text3{
+  font-size: 20px;
+  
+}
+
+.text4 {
+  font-size: 19px;
+}
+
+/* Our portfolio */
+
+.images {
+  margin: 5px;
+  padding: 50px;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+}
+
+.copyright, .stamps {
+  margin-top: 150px;
+  justify-content: space-around;
+  display: inline;
+}
+
+.copyright {
+  margin: 0 15%;
+}
+
+.stamps {
+  margin: 0 15%;
 }
