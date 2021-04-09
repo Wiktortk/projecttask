@@ -1,17 +1,26 @@
+/* Variables */
+/*font-family: 'Dancing Script', cursive;/*
+/*font-family: 'Open Sans Condensed', sans-serif;*/
+/*https://swiat-kolorow.com.pl/userdata/public/gfx/228759/Fototapeta-na-flizelinie-MS-5-0322-GRAFFITI-ART..jpg*/
+/* Global */
+body {
+  margin: 0;
+}
+
 /* Article */
 .text-first, .text-second {
   color: white;
   text-align: center;
-  margin: 15px 10px;
+  margin: -45px 0;
 }
 
 .text-first {
-  font-size: 60px;
+  font-size: 65px;
   margin-top: 90px;
 }
 
 .text-second {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #photo {
@@ -24,10 +33,33 @@
 }
 
 #photo p {
+  font-family: 'Work Sans', sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.btn {
+  display: inline-flex;
+  min-width: 160px;
+  font-size: 16px;
+  padding: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  background-position: 100% 0;
+  background-size: 300%;
+  margin: 250px 0 0 0;
+}
+
+.btn-one {
+  background-color: #0f9fff;
+  color: #ffffff;
 }
 
 /* Splash */
@@ -55,8 +87,10 @@ li {
 }
 
 .icon {
+  font-family: 'Dancing Script', cursive;
   color: gold;
   margin: 0 55px;
+  text-decoration: none;
 }
 
 .item {
@@ -64,14 +98,14 @@ li {
 }
 
 .item-link {
+  font-family: 'Work Sans', sans-serif;
   text-decoration: none;
-  color: white;
+  color: #e3dddd;
   margin: 0 5px;
 }
 
 /* Cointainer */
 .container {
-  /*height: 100vh;*/
   width: 100%;
   max-width: 100%;
   margin: 50px 0;
@@ -83,12 +117,19 @@ li {
 }
 
 /* Services */
-.gray {
-  background-color: gainsboro;
+.box {
+  position: relative;
+}
+
+.box > img {
+  width: 100%;
+  max-width: 340px;
 }
 
 .fas {
-  align-items: center;
+  color: gold;
+  font-size: 60px;
+  margin-left: 140px;
 }
 
 .text1, .text2, .text3, .text4 {
@@ -98,45 +139,43 @@ li {
 }
 
 .text1 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 50px;
   margin-top: 90px;
 }
 
 .text2 {
+  font-family: 'Architects Daughter', cursive;
   font-size: 21px;
-  margin-bottom: 80px;
+  margin-bottom: 180px;
 }
 
 .text3 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 20px;
 }
 
 .text4 {
+  font-family: 'Architects Daughter', cursive;
   font-size: 19px;
 }
 
 /* Our portfolio */
-.images {
-  margin: 5px;
-  padding: 50px;
+.article {
+  background-color: gainsboro;
 }
 
 /* Footer */
-.footer {
-  width: 100%;
-}
-
-.copyright, .stamps {
-  margin-top: 150px;
-  justify-content: space-around;
-  display: inline;
-}
-
 .copyright {
-  margin: 0 15%;
+  margin-top: 25px;
 }
 
-.stamps {
-  margin: 0 15%;
+.stamps > i {
+  font-size: 35px;
+  background: blue;
+  color: #ffffff;
+  border: solid blue 10px;
+  border-radius: 25px;
+  margin: 10px 15px 15px 15px;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxZQUFBO0FBRUE7RUFDRSxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQ0FuQjs7QURHQTtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7QUNBbEI7O0FER0E7RUFDRSxlQUFlO0FDQWpCOztBREdBO0VBQ0UseUZBQXlGO0VBQ3pGLGFBQWE7RUFDYixXQUFXO0VBQ1gsc0JBQXNCO0VBQ3RCLDRCQUE0QjtFQUM1QiwyQkFBMkI7QUNBN0I7O0FER0E7RUFDRSxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7RUFDVCxnQ0FBZ0M7QUNBbEM7O0FER0EsV0FBQTtBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLHlCQUErQjtBQ0RqQzs7QURJQTtFQUNFLGdCQUFnQjtBQ0RsQjs7QURJQTtFQUNFLHFCQUFxQjtFQUNyQixTQUFTO0VBQ1QsVUFBVTtBQ0RaOztBRElBO0VBQ0UsVUFBVTtBQ0RaOztBRElBO0VBQ0UscUJBQXFCO0FDRHZCOztBRElBO0VBQ0UsV0FBVztFQUNYLGNBQWM7QUNEaEI7O0FESUE7RUFDRSxjQUFjO0FDRGhCOztBRElBO0VBQ0UscUJBQXFCO0VBQ3JCLFlBQVk7RUFDWixhQUFhO0FDRGY7O0FESUEsZUFBQTtBQUVBO0VBQ0UsaUJBQUE7RUFDQSxXQUFXO0VBQ1gsZUFBZTtFQUNmLGNBQWM7RUFDZCxVQUFVO0FDRlo7O0FES0E7RUFDRSxXQUFXO0FDRmI7O0FES0EsYUFBQTtBQUVBO0VBQ0UsMkJBQTJCO0FDSDdCOztBRE1BO0VBQ0UsbUJBQW1CO0FDSHJCOztBRE1BO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixZQUFZO0FDSGQ7O0FETUE7RUFDRSxlQUFlO0VBQ2YsZ0JBQWdCO0FDSGxCOztBRE1BO0VBQ0UsZUFBZTtFQUNmLG1CQUFtQjtBQ0hyQjs7QURNQTtFQUNFLGVBQWU7QUNIakI7O0FET0E7RUFDRSxlQUFlO0FDSmpCOztBRE9BLGtCQUFBO0FBRUE7RUFDRSxXQUFXO0VBQ1gsYUFBYTtBQ0xmOztBRFFBLFdBQUE7QUFFQTtFQUNFLFdBQVc7QUNOYjs7QURTQTtFQUNFLGlCQUFpQjtFQUNqQiw2QkFBNkI7RUFDN0IsZUFBZTtBQ05qQjs7QURTQTtFQUNFLGFBQWE7QUNOZjs7QURTQTtFQUNFLGFBQWE7QUNOZiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBRUE7a0RDQWtEO0FERWxELCtHQUFBO0FBRUEsV0FBQTtBQUVBO0VBQ0UsU0FBUztBQ0ZYOztBREtBLFlBQUE7QUFFQTtFQUNFLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsZUFBZTtBQ0hqQjs7QURNQTtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7QUNIbEI7O0FETUE7RUFDRSxlQUFlO0FDSGpCOztBRE1BO0VBQ0UseUZBQXlGO0VBQ3pGLGFBQWE7RUFDYixXQUFXO0VBQ1gsc0JBQXNCO0VBQ3RCLDRCQUE0QjtFQUM1QiwyQkFBMkI7QUNIN0I7O0FETUE7RUFDRSxvQ0FBb0M7RUFDcEMsa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixTQUFTO0VBQ1QsZ0NBQWdDO0FDSGxDOztBRE1BO0VBQ0Usb0JBQW9CO0VBQ3BCLGdCQUFnQjtFQUNoQixlQUFlO0VBQ2YsYUFBYTtFQUNiLHFDQUFxQztFQUNyQyxrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsbUJBQW1CO0VBQ25CLGtCQUFrQjtFQUNsQiwyQkFBMkI7RUFDM0IscUJBQXFCO0VBQ3JCLG1CQUFtQjtBQ0hyQjs7QURNQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FDSGhCOztBRE1BLFdBQUE7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQix5QkFBK0I7QUNKakM7O0FET0E7RUFDRSxnQkFBZ0I7QUNKbEI7O0FET0E7RUFDRSxxQkFBcUI7RUFDckIsU0FBUztFQUNULFVBQVU7QUNKWjs7QURPQTtFQUNFLFVBQVU7QUNKWjs7QURPQTtFQUNFLHFCQUFxQjtBQ0p2Qjs7QURPQTtFQUNFLHNDQUFzQztFQUN0QyxXQUFXO0VBQ1gsY0FBYztFQUNkLHFCQUFxQjtBQ0p2Qjs7QURPQTtFQUNFLGNBQWM7QUNKaEI7O0FET0E7RUFDRSxvQ0FBb0M7RUFDcEMscUJBQXFCO0VBQ3JCLGNBQXlCO0VBQ3pCLGFBQWE7QUNKZjs7QURPQSxlQUFBO0FBRUE7RUFDRSxXQUFXO0VBQ1gsZUFBZTtFQUNmLGNBQWM7RUFDZCxVQUFVO0FDTFo7O0FEUUE7RUFDRSxXQUFXO0FDTGI7O0FEUUEsYUFBQTtBQUlBO0VBQ0Usa0JBQWtCO0FDUnBCOztBRFdBO0VBQ0UsV0FBVztFQUNYLGdCQUFnQjtBQ1JsQjs7QURXQTtFQUNFLFdBQVc7RUFDWCxlQUFlO0VBQ2Ysa0JBQWtCO0FDUnBCOztBRFlBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixZQUFZO0FDVGQ7O0FEWUE7RUFDRSx3Q0FBd0M7RUFDeEMsZUFBZTtFQUNmLGdCQUFnQjtBQ1RsQjs7QURZQTtFQUNFLDJDQUEyQztFQUMzQyxlQUFlO0VBQ2Ysb0JBQW9CO0FDVHRCOztBRFlBO0VBQ0Usd0NBQXdDO0VBQ3hDLGVBQWU7QUNUakI7O0FEWUE7RUFDRSwyQ0FBMkM7RUFDM0MsZUFBZTtBQ1RqQjs7QURZQSxrQkFBQTtBQUVBO0VBQ0UsMkJBQTJCO0FDVjdCOztBRGFBLFdBQUE7QUFFQTtFQUNFLGdCQUFnQjtBQ1hsQjs7QURjQTtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsY0FBYztFQUNkLHVCQUF1QjtFQUN2QixtQkFBbUI7RUFDbkIsMkJBQTJCO0FDWDdCIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
