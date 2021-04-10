@@ -109,19 +109,6 @@ li {
   margin: 0 5px;
 }
 
-/* Cointainer */
-
-.container {
-  width: 100%;
-  max-width: 100%;
-  margin: 50px 0;
-  padding: 0;
-}
-
-.row {
-  margin: 40px 0;
-}
-
 /* Services */
 
 .box {
@@ -148,13 +135,13 @@ li {
 .text1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 50px;
-  margin: 90px 220px 0 220px;
+  margin-top: 90px;
 } 
 
 .text2 {
   font-family: 'Architects Daughter', cursive;
   font-size: 21px; 
-  margin: 0 220px 180px 220px;
+  margin-bottom: 120px;
 } 
 
 .text3{
